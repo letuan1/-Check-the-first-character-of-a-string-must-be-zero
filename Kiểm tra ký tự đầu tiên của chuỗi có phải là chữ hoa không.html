@@ -5,7 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-<script src="kiểm%20tra%20kí%20tự%20đầ%20tiên%20nhập%20vào%20có%20phải%20hoa%20ha%20ko.js"></script>
+<script>
+    function upperCase(str) {
+        str = prompt("nhập 1 chuỗi kí tự");
+        regexp = /^[A-Z]/;
+        if (regexp.test(str)) {
+            alert("String's first character is uppercase");
+        } else {
+            alert("String's first character is not uppercase");
+        }
+    }
+
+
+</script>
 <button type="button" onclick="upperCase()">start</button>
 </body>
 </html>
